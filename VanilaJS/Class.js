@@ -23,3 +23,14 @@ class Foo {}
  console.log(foo); // MyClass{}
 
  new MyClass(); // ReferenceError: MyClass is not defined
+
+ // [인스턴스 생성]
+ class Foo{}
+ const foo = new Foo(); // Foo는 클래스이름이 아니라 생성자이다.
+
+ console.log(Object.getPrototypeOf(foo).constructor === Foo); // True
+
+ //new 연산자를 사용하지 않고 constructor를 호출하면 타입 에러(TypeError)가 발생한다.
+// 생성자는 new 연산자 없이 호출할 수 없다. 
+class Foo {}
+const foo = Foo(); // TypeError: Class constructor Foo cannot be nivoked without 'new'
