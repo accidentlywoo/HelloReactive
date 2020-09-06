@@ -15,3 +15,21 @@ console.log(foo); // Foo{num:1}
 
 foo.name = 'woo'; //프로퍼티 동적할당
 console.log(foo); // Foo {num:1, name:'woo'}
+
+// 클래스 필드
+class Foo{
+    name = ''; // SyntaxError 발생가능 -> 최신 브라우저만 지원
+    constructor(){}
+}
+
+// 클래스 필드의 선언과 초기화는 반드시 constructor 내부에서 실시한다.
+class Foo {
+    constructor(name = ''){
+        this.name = name; // 클래스 필드의 선언과 초기화
+    }
+}
+const foo = new Foo('Woo');
+console.log(foo); // Foo {name: 'Woo'}
+// 클래스 필드는 인스턴스를 통해 클래스 외부에서 언제나 참조할 수 있다.
+// -> 언제나 public 이다
+console.log(foo.name);
