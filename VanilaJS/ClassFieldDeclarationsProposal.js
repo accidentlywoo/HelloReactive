@@ -7,7 +7,12 @@ class Foo {
     x = 1;
     #p = 10;
     get p(){return this.#p;}
+    static y = 20;
+    static #sp = 30;
+    static sp(){return this.#sp;}
 } 
 
 let foo = new Foo();
-console.log(foo.p);
+console.log("private field : ",foo.p);
+console.log("static y : ",Foo.y);
+console.log("static private Field????????????? : ", Foo.sp());
