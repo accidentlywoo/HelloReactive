@@ -42,7 +42,7 @@ var foo = new Foo(123);
 console.log(foo.prototypeMethod());
 console.log(Foo.staticMethod());
 console.log(Foo.prototype === foo.__proto__); // true
-console.log(Foo.prototype.constructor === Foo); // true : 생성자 함수 Foo의 prototype 프로퍼티가 가리키는 프로토타입 객체(-> ? 이게 뭔데요 : Object에서 딸려온 놈인듯)
+console.log(Foo.prototype.constructor === Foo); // true : 생성자 함수 Foo의 prototype 프로퍼티가 가리키는 프로토타입 객체(->[[Prototype]]이구나)
                                                 //가 가지고있는 constructor 프로퍼티는 생성자 함수 Foo를 가리킨다.
         //정적 메소드인 staticMethod는 생성자 함수 Foo의 메소드(함수는 객체이므로 메소드를 가질 수 있다.)이고, 
         //일반 메소드인 prototypeMethod는 프로토타입 객체 Foo.prototype의 메소드이다.
