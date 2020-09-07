@@ -16,9 +16,11 @@ class Foo {
 }
 
 const foo = new Foo([1, 2]);
+//      getter는 참조형식으로 메소드가 호출된다.
 // 필드에 fistElem에 접근하면 getter 가 호출된다.
 console.log(foo.firstElem);// 1 
 
+//      setter는 클래스 필드 이름처럼 사용된다. 프로퍼티처럼 값을 할당하는 형식으로 사용.
 // 클래스 필드에 lastElem에 값을 할당하면 setter 가 호출된다.
 foo.firstElem = 100;
 
