@@ -41,3 +41,19 @@ var foo = new Person('Lee');
 
 console.dir(Person); // prototype 프로퍼티 O
 console.dir(foo); // prototype 프로퍼티 X  그거말고도 많이 다른디?
+
+// [[Prototype]]
+/*
+    - 함수를 포함한 모든 객체가 가지고 있는 인터널 슬롯이다.
+    - 객체의 입장에서 자신의 부모 역할을 하는 프로토타입 객체를 가리키며 함수 객체의 경우
+      Function.prototype를 가리킨다. 
+      -> 생성자 함수로 생성된 객체의 프로포타입 체인 참조
+*/
+console.log(Person.__proto__ === Function.prototype);
+
+// prototype 프로퍼티
+/*
+    - 함수 객체만 가지고 있는 프로퍼티이다.
+    - 함수 객체가 생성자로 사용될 때 이 함수를 통해 생성될 객체의 부모 역할을 하는 객체(프로토타입 객체)를 가리킨다.
+*/
+console.log(Person.prototype === foo.__proto__);
