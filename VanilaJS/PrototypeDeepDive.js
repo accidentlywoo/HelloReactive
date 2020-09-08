@@ -57,3 +57,4 @@ console.log(Person.__proto__ === Function.prototype);
     - 함수 객체가 생성자로 사용될 때 이 함수를 통해 생성될 객체의 부모 역할을 하는 객체(프로토타입 객체)를 가리킨다.
 */
 console.log(Person.prototype === foo.__proto__);
+// 다음 글 : constructor property
