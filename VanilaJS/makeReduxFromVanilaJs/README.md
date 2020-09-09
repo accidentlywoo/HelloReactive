@@ -33,5 +33,5 @@ function App(){
 }
 ```
 
-[단방향 데이터 흐름](https://redux.js.org/img/tutorials/essentials/one-way-data-flow.png)
+![단방향 데이터 흐름](https://redux.js.org/img/tutorials/essentials/one-way-data-flow.png)
 
