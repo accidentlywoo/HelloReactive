@@ -8,6 +8,8 @@
 DOM에 직접 접근하지 않고 VDOM(Virtual DOM)이라는 중간다리를 만들고 VDOM을 조작하는 프레임워크 들이 생기기 시작
 이것이 SPA 라이브러리인 Vue.js, React.js 이다. (SPA 프레임워크 Angular.js(?))
 
+> 간단한 react 컨셉 코드 (firstReact.js)
+
   React는 사용성을 위해 JSX를 사용해 사용자 정의 컴포넌트를 사용할 수 있다.
  근본적으로 JSX는 ``` React.createElement(component, props, ...children) ``` 함수에 대한 
  Syntax Sugar이다. JSX는 Babel 컴파일러를 통해 JavaScript로 변환된다.
@@ -26,3 +28,5 @@ DOM에 직접 접근하지 않고 VDOM(Virtual DOM)이라는 중간다리를 만
  JSX 코드와 같은 스코프 내에 존재해야만 한다.
 
  [JSX-In-Depth](https://ko.reactjs.org/docs/jsx-in-depth.html)
+
+> JSX의 트렌스 파일링의 이해와 VDOM 컨셉 이해 (makeReactDOM.js)
