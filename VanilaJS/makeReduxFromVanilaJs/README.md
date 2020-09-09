@@ -1,6 +1,6 @@
 # VanilaJS로 만드는 Redux / React / React Hook
 브라우저 실습환경에서 코드를 바로 돌려보면서 실습하니 너모 좋습니다.
- > (브라우저 실습환경 : codesandbox)[https://codesandbox.io/index2]
+ > [브라우저 실습환경 : codesandbox](https://codesandbox.io/index2)
 ## Redux 란?
   Redux는 '액션'이라는 이벤트를 사용해 애플리케이션 상태를 관리하고 업데이트하기 위한 패턴 및 라이브러리이다.
  업데이트하기위한 패턴 및 라이브러리이다. 
@@ -32,4 +32,6 @@ function App(){
     );
 }
 ```
-(단방향 데이터 흐름)[https://redux.js.org/img/tutorials/essentials/one-way-data-flow.png]
+
+[단방향 데이터 흐름](https://redux.js.org/img/tutorials/essentials/one-way-data-flow.png)
+
