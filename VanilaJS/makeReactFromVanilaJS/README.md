@@ -14,8 +14,8 @@ DOM에 직접 접근하지 않고 VDOM(Virtual DOM)이라는 중간다리를 만
  근본적으로 JSX는 ``` React.createElement(component, props, ...children) ``` 함수에 대한 
  Syntax Sugar이다. JSX는 Babel 컴파일러를 통해 JavaScript로 변환된다.
 
- '''JSX 태그의 첫 부분은 React element의 타입을 결정합니다.'''
- '''대문자'''로 시작하는 JSX 태그는 React 컴포넌트를 지정합니다.
+ ***JSX 태그의 첫 부분은 React element의 타입을 결정합니다.***
+ ***대문자***로 시작하는 JSX 태그는 React 컴포넌트를 지정합니다.
  대 소문자로 React 컴포넌트를 구분하는 간단한 컨셉입니다.
  
  - Element가 소문자로 시작하는 경우 내장 컴포넌트라는 것을 뜻하고, 문자열로 ```React.createElement```에 전달된다.
@@ -46,5 +46,6 @@ React class의 componentDisMount, componentDisUpdate, componentWillUnmount 와 �
 하나의 API로 통합된 것.
 
 ### 공부 리스트
-> (구조 분해 할당)[https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#%EB%B0%B0%EC%97%B4_%EA%B5%AC%EC%A1%B0_%EB%B6%84%ED%95%B4]
+> [구조 분해 할당](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#%EB%B0%B0%EC%97%B4_%EA%B5%AC%EC%A1%B0_%EB%B6%84%ED%95%B4)
+
 > JSX의 트렌스 파일링의 이해와 VDOM 컨셉 이해 [makeReactDOM.js 전체 코드보기](https://github.com/accidentlywoo/HelloReactive/blob/master/VanilaJS/makeReactFromVanilaJS/makeReactDOM.js)
