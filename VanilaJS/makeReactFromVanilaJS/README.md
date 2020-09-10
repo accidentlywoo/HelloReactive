@@ -30,3 +30,16 @@ DOM에 직접 접근하지 않고 VDOM(Virtual DOM)이라는 중간다리를 만
  [JSX-In-Depth](https://ko.reactjs.org/docs/jsx-in-depth.html)
 
 > JSX의 트렌스 파일링의 이해와 VDOM 컨셉 이해 (makeReactDOM.js)
+
+## Hook을 이해하기 전에..
+React Component는 크게 Class 컴포넌트와 Function 컴포넌트가 있다.
+Class 컴포넌트에서 상태관리는 쉬울 수 있다.
+리액트 16.8에서 Hook가 새로 추가되었는데, 이는 함수형 컴포넌트에서 상태 값과 여러 React 기능을 사용할 수 있게한다.
+ 이는 React에서 Class를 제거할 계획은 아니다. Hook은 React 컨셉을 대체하지 않는다.
+대신에 props, state, context, refs, lifecycle 같은 React개념에 좀 더 직관적인 API를 제공.
+Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.
+Class 사용과 관련된 문제점을 나열하고있고, Function Component사용을 지향하는것같다.
+
+
+### 공부 리스트
+> (구조 분해 할당)[https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#%EB%B0%B0%EC%97%B4_%EA%B5%AC%EC%A1%B0_%EB%B6%84%ED%95%B4]
