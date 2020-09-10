@@ -1,9 +1,10 @@
-import React, { useState } from 'react'; // useState -> Hook
+import React, { useState, useEffect } from 'react'; // useState -> Hook
 import ReactDOM from 'react-dom';
 
 function App(){
     const [count, setCount] = useState(1);
     const [age, setAge] = useState(19);
+    const [resetAge, setResetAge] = useState(19);
 
     const increament = () => {
       setCount ( preCounter => preCounter + 1);
@@ -11,6 +12,13 @@ function App(){
     const eatAge = () => {
         setAge (preAge => preAge + 1);
     }
+    useEffect(() => {
+        setAge(preAge => preAge);
+        return () => {
+            setResetAge(resetAge => 19);
+        };
+    });
+
     return (
         <div>
             <h1 onClick={() => increament()}>상태 { count }</h1>
