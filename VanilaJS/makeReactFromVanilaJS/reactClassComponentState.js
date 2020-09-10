@@ -14,7 +14,9 @@ class  App extends React.Component{
     }
     render(){
         return(
-            `<p>안녕하세요!${this.state.count}</p>`
+            <p onClick={() => this.componentDidMount()}>
+             안녕하세요{this.state.count}
+            </p>
         )
     }
 }
