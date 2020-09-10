@@ -18,7 +18,8 @@ function render(vdom, container){ // vdom으로 들어오는 친구들의 대-�
     container.appendChild(renderElement(vdom));
 }
 /* @jsx createElement */ 
-// JSX주석을 통해 Babel이 React.createElement(createElement)형태로 컴파일되고 리액트 컴포넌트로 실행된다.
+// JSX주석을 통해 Babel이 React.createElement(type, props = {}, ... children) -> createElement(type, props = {}, ... children)
+// 형태로 컴파일되고 리액트 컴포넌트로 실행된다.
 function createElement(type, props = {}, ... children){
     if(typeof type === 'function'){
         return type.apply(null, [props, ...children]);
