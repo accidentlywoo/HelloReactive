@@ -14,8 +14,8 @@ DOM에 직접 접근하지 않고 VDOM(Virtual DOM)이라는 중간다리를 만
  근본적으로 JSX는 ``` React.createElement(component, props, ...children) ``` 함수에 대한 
  Syntax Sugar이다. JSX는 Babel 컴파일러를 통해 JavaScript로 변환된다.
 
- '''JSX 태그의 첫 부분은 React element의 타입을 결정합니다.'''
- '''대문자'''로 시작하는 JSX 태그는 React 컴포넌트를 지정합니다.
+ ***JSX 태그의 첫 부분은 React element의 타입을 결정합니다.***
+ ***대문자***로 시작하는 JSX 태그는 React 컴포넌트를 지정합니다.
  대 소문자로 React 컴포넌트를 구분하는 간단한 컨셉입니다.
  
  - Element가 소문자로 시작하는 경우 내장 컴포넌트라는 것을 뜻하고, 문자열로 ```React.createElement```에 전달된다.
