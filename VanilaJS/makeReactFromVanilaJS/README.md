@@ -8,7 +8,7 @@
 DOM에 직접 접근하지 않고 VDOM(Virtual DOM)이라는 중간다리를 만들고 VDOM을 조작하는 프레임워크 들이 생기기 시작
 이것이 SPA 라이브러리인 Vue.js, React.js 이다. (SPA 프레임워크 Angular.js(?))
 
-> 간단한 react 컨셉 코드 (firstReact.js)
+간단한 react 컨셉 코드 [firstReact.js 전체 코드보기](https://github.com/accidentlywoo/HelloReactive/blob/master/VanilaJS/makeReactFromVanilaJS/firstReact.js)
 
   React는 사용성을 위해 JSX를 사용해 사용자 정의 컴포넌트를 사용할 수 있다.
  근본적으로 JSX는 ``` React.createElement(component, props, ...children) ``` 함수에 대한 
@@ -40,6 +40,11 @@ Class 컴포넌트에서 상태관리는 쉬울 수 있다.
 Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.
 Class 사용과 관련된 문제점을 나열하고있고, Function Component사용을 지향하는것같다.
 
+## Effect Hook
+useEffect는 함수 컴포넌트 내에서 side effects를 수행할 수 있게 해준다.
+React class의 componentDisMount, componentDisUpdate, componentWillUnmount 와 같은 목적으로 제공되지만,
+하나의 API로 통합된 것.
 
 ### 공부 리스트
 > (구조 분해 할당)[https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#%EB%B0%B0%EC%97%B4_%EA%B5%AC%EC%A1%B0_%EB%B6%84%ED%95%B4]
+> JSX의 트렌스 파일링의 이해와 VDOM 컨셉 이해 [makeReactDOM.js 전체 코드보기](https://github.com/accidentlywoo/HelloReactive/blob/master/VanilaJS/makeReactFromVanilaJS/makeReactDOM.js)
