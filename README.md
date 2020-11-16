@@ -14,3 +14,5 @@
 - 6 회차 : Webpack 이해하기
 
 - [꿀 자료 : D2](https://d2.naver.com/helloworld/1848131)
+- [갓민태 선생님 수업 코드박스](https://codesandbox.io/s/navigation08live-8op00?file=/src/index.tsx)
+- [우텍 우등생 수민님 외 3인 스터디](https://github.com/textuel/Woowa_Tech_Learning_React_Typescript)
